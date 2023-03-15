@@ -1,7 +1,7 @@
 // dependencies
 import Image from 'next/image'
 import Logo from '/public/resources/icons/terafortFooterLogo.svg'
-import terafortIcon from '/public/resources/icons/terafortFooterIcon.svg'
+import terafortIcon from '/public/resources/icons/terafortfooterIcon.svg'
 import Container from '../Container'
 import Classes from './Footer.module.scss'
 import { FooterLinks } from './FooterLinks'
