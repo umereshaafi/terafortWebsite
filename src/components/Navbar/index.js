@@ -38,19 +38,9 @@ export default function NavBar() {
         <div className={style.navContainer}>
           <Link href={'/'} className={style.logo} scroll={false}>
             {typeof window !== 'undefined' && window.innerWidth > 1024 ? (
-              <Image
-                src={Logo}
-                width={'146'}
-                height={'32'}
-                alt='terafort-logo'
-              />
+              <Image src={Logo} width={87} height={20} alt='terafort-logo' />
             ) : (
-              <Image
-                src={Logo}
-                width={'87'}
-                height={'20'}
-                alt='terafort-logo'
-              />
+              <Image src={Logo} width={87} height={20} alt='terafort-logo' />
             )}
           </Link>
 
@@ -96,24 +86,26 @@ export default function NavBar() {
         </div>
         <Drawer anchor='right' open={show} onClose={handleClose}>
           {
-            <ul style={{ padding: '0 10px' }}>
-              {navLinks.map((i) => (
-                <li
-                  key={i.id}
-                  style={{
-                    padding: '10px 0 ',
-                    margin: '10px 0',
-                  }}
-                  className={
-                    i.LinkRoute == '/publish' ? style.publishing : undefined
-                  }
-                >
-                  <Link href={i.LinkRoute} onClick={() => setShow(false)}>
-                    {i.linkName}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <div>
+              <ul style={{ padding: '0 10px' }}>
+                {navLinks.map((i) => (
+                  <li
+                    key={i.id}
+                    style={{
+                      padding: '10px 0 ',
+                      margin: '10px 0',
+                    }}
+                    className={
+                      i.LinkRoute == '/publish' ? style.publishing : undefined
+                    }
+                  >
+                    <Link href={i.LinkRoute} onClick={() => setShow(false)}>
+                      {i.linkName}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           }
         </Drawer>
       </nav>
