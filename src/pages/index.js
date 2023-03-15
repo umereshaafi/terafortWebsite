@@ -1,11 +1,11 @@
 'use client'
 //importing components
-import { Hero } from './(home)/Hero'
-import { Solution } from './(home)/Solution'
-import { Projects } from './(home)/Projects'
+import { Hero } from '../pagesComponents/(home)/Hero/Hero'
+import { Solution } from '../pagesComponents/(home)/Solution'
+import { Projects } from '../pagesComponents/(home)/Projects'
 import { TerafortNumbers } from '../components/TerafortNumbers'
-import { Technologies } from './(home)/Technologies'
-import { Awards } from './(home)/Awards'
+import { Technologies } from '../pagesComponents/(home)/Technologies'
+import { Awards } from '../pagesComponents/(home)/Awards'
 
 // home page
 export default function Home() {
